@@ -32,8 +32,11 @@ def mult(a, b):
 # b -- divisor
 def div(a, b):
     return a / b
+
 def exp(a, b):
     return a ** b
+def mod(a, b):
+    return a % b
 
 
 # -------------------------------------------------------- #
@@ -71,8 +74,11 @@ while (True):
             print "Quotient: ", div(a, b)
         elif (op == "**"):
             print "The square/cube/etc: ", exp(a, b)
+        elif (op == "%"):
+            print "Quotient: ", mod(a, b)
         else:
             print "Invalid operation..."
+        
 
     q = raw_input("Quit? [y/n] ")
     if (q == "y" or q == "Y"):
